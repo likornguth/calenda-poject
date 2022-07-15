@@ -2,26 +2,33 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box;
-    font-family: "Quicksand", sans-serif;
+    font-family: "tomarik-poster", sans-serif;
+    font-weight: 50;
 }
 
 html{
     font-size: 62.5%;
-    background-color:rgba(0, 0, 0, 0.4);
-    background-image: url("https://img.freepik.com/free-vector/festive-christmas-clipart-elements-collection_53876-95704.jpg?w=2000");
+    /*background-color:rgba(0, 0, 0, 0.4);*/
+    background-image: url("https://www.thesprucecrafts.com/thmb/MBboFUIjTQlsZzuYBB9DYRHz1i8=/1885x1414/smart/filters:no_upscale()/GettyImages-930805632-3253aa76d3d74d0e841c04767578d08d.jpg");
+    background-size: 1700px;
 
 }
 
 .container{
     width: 100%;
     height: 100%;
-    background-color: #FFF2EB;
-    color: #FFF2EB;
+    min-width: 1200px;
+    background-color: #FFF1E6;
+    color: #FFF1E6;
     display: flex;
     justify-content: center;
     align-items: normal;
-    background-color:rgba(0, 0, 0, 0.4);
-    background-image: url("https://img.freepik.com/free-vector/festive-christmas-clipart-elements-collection_53876-95704.jpg?w=2000");
+    background: transparent;
+
+    /*background-color:rgba(0, 0, 0, 0.4);
+    background-image: url("https://media.istockphoto.com/photos/empty-wishlist-for-santa-picture-id494810494?k=20&m=494810494&s=612x612&w=0&h=o7Gqo-CIF7hYsU3S71IWpmAmieVRQI79w62w6hvvJr4=");
+    background-size: 1200px;*/
+
 }
 /*
 .directions{
@@ -36,8 +43,8 @@ html{
 
 .calendar{
     width:112.5rem;
-    height: 87.5rem;
-    background-color: #CFF0DB;
+    height: 93rem;
+    background-color: #FFF1E6;
     box-shadow: 0 .5rem 3rem rgba(0, 0, 0, 0.4);
     overflow: hidden;
 }
@@ -45,35 +52,39 @@ html{
 .month{
     width: 100%;
     height: 30rem;
-    background-color: #DB4529;
+    background-color: #FFF1E6;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 0 5rem;
     text-align: center;
+    color: #1C4F56;
     /*text-shadow: 0.3rem .5rem rgba(0,0,0,0.2);*/
 
 }
 .month h1{
     font-size:8rem;
-    font-weight:500;
+    font-weight:800;
+    font-family: "tomarik-brush", sans-serif;
     text-transform: uppercase;
     letter-spacing:0.5rem;
     margin-bottom: 2.5rem;
 }
 .month p{
     font-size: 2.5rem;
+    font-family: "tomarik-brush", sans-serif;
+
     
 }
 .weekdays{
-    background-image: url("/images/snowflake.png");
-    background-size: 56.25px;
+    background-color: #FFF1E6;
     width: 100%;
     height: 10rem;
     padding: 0rem .1rem;
     display:flex;
     align-items: center;
-    color: #1C4F56
+    color: #BA2027;
+    
 }
 
 .weekdays div {
@@ -89,18 +100,19 @@ html{
 
 .days {
     width: 100%;
+    min-width: 1200px;
     display: flex;
     flex-wrap:wrap;
     padding: 2.5rem 0.25rem;
-    color:#DB4529;
+    color:#1C4F56;    
 }
 
 .days div {
     border-radius:30px;
     font-size:3.5rem;
-    margin: .75rem;
-    width: calc(40.2rem/3.5 * 1.25);
-    height:12.5rem;
+    margin: 2.2rem;
+    width: calc(32rem/3.5 * 1.25);
+    height:10rem;
     display:flex;
     justify-content:center;
     align-items:center;
@@ -109,12 +121,13 @@ html{
 }
 
 .days button {
-    border-radius:30px;
+    /*border-radius:30px;*/
+    
     font-size:3.5rem;
-    margin: .75rem;
-    width: calc(40.2rem/3.5 * 1.25);
-    height:12.5rem;
-    display:flex;
+    margin: 2.2rem;
+    width: calc(32rem/3.5 * 1.25);
+    height:10rem;
+    /*display:flex;*/
     justify-content:center;
     align-items:center;
     text-shadow: 0 0.3rem 0.5rem rgba(0,0,0,0.5);
@@ -122,134 +135,160 @@ html{
     color:#FFF2EB;
 }
 
-.twelvedays {
-    background-color: #DB4529;
+.twelvedays1 {
+    background-color: #D6663F;
+    border: none;
+}
+.twelvedays2 {
+    background-color: #6BA3A8;
+    border: none;
+
+}
+.twelvedays3 {
+    background-color: #8A1B28;
+    border: none;
+
+ 
 }
 
 .days button:hover:not(.null){
-    background-color: #6EA100;
+    background-color: #B8BB3D;
     /*border: 0.2rem solid #eee;*/
+    border: 2px solid #BA2027 ;
     cursor: pointer;
     color: #CFF0DB;
 }
 #popup1 {
-    margin: 70px auto;
-    padding: 20px;
-    width: 550px;
-    height: 400px;
+    margin: 300px auto;
+    border-radius: 0px;
+    padding: 0px;
+    height: 63rem;    
+    width:112.5rem;
     position: absolute;
     background-image: url("/images/present.png");
-    background-size: 110px;
+    background-size: 137.5px;
     
 }
 
 #popup2 {
-    margin: 70px auto;
-    padding: 20px;
-    width: 550px;
-    height: 400px;
+    margin: 300px auto;
+    border-radius: 0px;
+    padding: 0px;
+    height: 63rem;  
+    width:112.5rem;
     position: absolute;
     background-image: url("/images/hat.png");
-    background-size: 110px;
+    background-size: 137.5px;
 }
 
 #popup3 {
-    margin: 70px auto;
-    padding: 20px;
-    width: 550px;
-    height: 400px;
+    margin: 300px auto;
+    border-radius: 0px;
+    padding: 0px;
+    height: 63rem;    
+    width:112.5rem;
     position: absolute;
     background-image: url("/images/champagne.png");
-    background-size: 110px;
+    background-size: 137.5px;
 }
 
 #popup4 {
-    margin: 70px auto;
-    padding: 20px;
-    width: 550px;
-    height: 400px;
+    margin: 300px auto;
+    border-radius: 0px;
+    padding: 0px;
+    height: 63rem;    
+    width:112.5rem;
     position: absolute;
     background-image: url("/images/tooters.png");
-    background-size: 110px;
+    background-size: 137.5px;
 }
 #popup5 {
-    margin: 70px auto;
-    padding: 20px;
-    width: 550px;
-    height: 400px;
+   
+    margin: 300px auto;
+    border-radius: 0px;
+    padding: 0px;
+    height: 63rem;   
+    width:112.5rem;
     position: absolute;
     background-image: url("/images/present.png");
-    background-size: 110px;
+    background-size: 137.5px;
 }
 
 #popup6 {
-    margin: 70px auto;
-    padding: 20px;
-    width: 550px;
-    height: 400px;
+    margin: 300px auto;
+    border-radius: 0px;
+    padding: 0px;
+    height: 63rem;   
+    width:112.5rem;
     position: absolute;
     background-image: url("/images/hat.png");
-    background-size: 110px;
+    background-size: 137.5px;
 }
 
 #popup7 {
-    margin: 70px auto;
-    padding: 20px;
-    width: 550px;
-    height: 400px;
+    margin: 300px auto;
+    border-radius: 0px;
+    padding: 0px;
+    height: 63rem;   
+    width:112.5rem;
     position: absolute;
     background-image: url("/images/champagne.png");
-    background-size: 110px;
+    background-size: 135px;
 }
 
 #popup8 {
-    margin: 70px auto;
-    padding: 20px;
-    width: 550px;
-    height: 400px;
+    margin: 300px auto;
+    border-radius: 0px;
+    padding: 0px;
+    height: 63rem;    
+    width:112.5rem;
     position: absolute;
     background-image: url("/images/tooters.png");
-    background-size: 110px;
+    background-size: 137.5px;
 }
 
 #popup9 {
-    margin: 70px auto;
-    padding: 20px;
-    width: 550px;
-    height: 400px;
+    margin: 300px auto;
+    border-radius: 0px;
+    padding: 0px;
+    height: 63rem;   
+    width:112.5rem;
     position: absolute;
     background-image: url("/images/present.png");
-    background-size: 110px;
+    background-size: 137.5px;
 }
 
 #popup10 {
-    margin: 70px auto;
-    padding: 20px;
-    width: 550px;
-    height: 400px;
+    margin: 300px auto;
+    border-radius: 0px;
+    padding: 0px;
+    height: 63rem;    
+    width:112.5rem;
     position: absolute;
     background-image: url("/images/hat.png");
-    background-size: 110px;
+    background-size: 135px;
 }
 
 #popup11 {
-    margin: 70px auto;
-    padding: 20px;
-    width: 550px;
-    height: 400px;
+    margin: 300px auto;
+    border-radius: 0px;
+    padding: 0px;
+    height: 63rem;   
+    width:112.5rem;
     position: absolute;
     background-image: url("/images/champagne.png");
-    background-size: 110px;
+    background-size: 137.5px;
 }
 
 #popup12 {
-    margin: 70px auto;
-    padding: 20px;
-    width: 550px;
-    height: 400px;
+    margin: 300px auto;
+    border-radius: 0px;
+    padding: 0px;
+    height: 63rem;   
+    width:112.5rem;
     position: absolute;
     background-image: url("/images/tooters.png");
-    background-size: 110px;
+    background-size: 137.5px;
 }
 .button {
     font-size: 1em;
@@ -306,7 +345,7 @@ html{
     color: #333;
   }
 .close:hover {
-    color: #DB4529;
+    color: #B8BB3D;
   }
 .content {
     max-height: 30%;
